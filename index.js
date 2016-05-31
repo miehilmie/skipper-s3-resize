@@ -12,7 +12,7 @@ var knox = require('knox');
 var S3MultipartUpload = require('knox-mpu-alt');
 var S3Lister = require('s3-lister');
 var mime = require('mime');
-var gm = require('gm');
+var gm = require('gm').subClass({imageMagick: true});
 
 /**
  * skipper-s3
